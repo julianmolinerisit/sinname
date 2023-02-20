@@ -172,10 +172,22 @@ main{
 	text-align: left;
 }
 
+.exchange-tablesContainer-1 {
+	margin-top: 40px;
+	width: 65%;
+	align-self: center;
+	min-width: 110px;
+	max-width: 520px;
+	text-align: left;
+}
+
+
 .tableContainer {
 	display: flex;
 	flex-direction: column;
 }
+
+
 
 .tableContainer h3 {
 	font-size: 1.8rem;
@@ -264,8 +276,10 @@ main{
 	padding: 8px;
 	text-align: center;
 	margin-top: 16px;
+	margin-bottom: 16px;
 	border-radius: 8px;
 	width: 100%;
+    height: 40px;
 	align-self: center;
 }
 
@@ -290,9 +304,191 @@ main{
     text-align: center;
   }
   
+
+  .exchange-tablesContainer--secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+
   .tableContainer {
     margin: 0 auto;
   }
   
 
   
+  .arrow-right {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #333;
+  }
+  
+  .tableContainer {
+    position: relative;
+  }
+  
+  .arrow-right {
+    /* ajustar la posición de la flecha */
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* situar la flecha a la derecha de la tabla */
+    right: -20px;
+  }
+
+
+/* flecha derecha */
+
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #333;
+    /* ajustar la posición de la flecha */
+    top: 50%;
+    transform: translateY(-50%);
+    
+    /* situar la flecha a la derecha de la tabla */
+    left: -20px;
+}
+
+
+
+
+
+  
+  
+  .exchange-tablesContainer--secondary {
+    display: none;
+  }
+  
+  .show-secondary-table {
+    display: block;
+    animation-name: show-table;
+    animation-duration: 1s;
+  }
+  
+
+ 
+  .show-table {
+    display: block;
+    animation-name: show-table;
+    animation-duration: 1s;
+  }
+  
+
+
+  @keyframes show-table {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+
+
+  .main-product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px ;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+  }
+
+  .product-detail-batata-logo{
+    position: absolute;
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url("../assets/icons/batata.svg");
+  }
+
+  .product-detail--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .product-detail--title h2{
+    margin-bottom: 20px;
+    font-size: 2.4 rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+  }
+
+  .product-detail--title p{
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080
+  }
+
+  .product-detail-card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-detail-card .icon-card {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.product-detail-card .clock {
+    background-image: url("./../assets/icons/clock.svg");
+}
+.product-detail-card .eye {
+    background-image: url("../assets/icons/eye.svg");
+}
+.product-detail-card .dollar {
+    background-image: url("../assets/icons/dollar-sign.svg");
+}
+.product-detail-card .circle {
+    background-image: url("../assets/icons/check-circle.svg");
+}
+.product-card-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--white);
+}
+.product-card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
