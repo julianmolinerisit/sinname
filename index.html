@@ -10,7 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)"/>
 </head>
 
 <body>
@@ -162,26 +163,54 @@
                 </section>
             </section>
             <section class="bitcoin-img-container">
-            <h2>Conocelo hoy.</h2>
+                <h2>Conocelo hoy.</h2>
             </section>
             <section id="plans" class="main-plans-container">
-            <div class="plans-title">
-                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
-                <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
-            </div>
-            <section class="plans-container--slider">
-                <article class="plans-container--card">
-                    <p class="recommended">Recomendado</p>
-                    <div class="plan-info-container">
-                        <h3 class="plan-card-title">Pago Anual</h3>
-                        <p class="plan-card--price"><span>$</span>99</p>
-                        <p class="plan-card--saving">* Ahorras $129 comparado al plan mensual.</p>
-                    <button class="plan-card--ca">Escoger este <span></span></button>
-                    </div>
-                </article>
+                <div class="plans-title">
+                    <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                    <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+                </div>
+                <section class="plans-container--slider">
+                    <article class="plans-container--card">
+                        <div class="plan-info-container">
+                            <h3 class="plan-card--title">Pago Anual</h3>
+                            <p id="plan-card--price"><span class="span-class">$</span>99</p>
+                            <p class="plan-card--saving">* Ahorras $129 comparado al plan mensual.</p>
+                            <button class="plan-card--ca">Escoger este <span></span></button>
+                        </div>
+                    </article>
+                    <article class="plans-container--card">
+                        <p class="recommended">Recomendado</p>
+                        <div class="plan-info-container">
+                            <h3 class="plan-card--title">Pago mensual</h3>
+                            <p id="plan-card--price"><span class="span-class">$</span>99</p>
+                            <p class="plan-card--saving">* Ahorras $129 comparado al plan mensual.</p>
+                            <button class="plan-card--ca">Escoger este <span></span></button>
+                        </div>
+                    </article>
+                    <article class="plans-container--card">
+                        <div class="plan-info-container">
+                            <h3 class="plan-card--title">Pago semanal</h3>
+                            <p id="plan-card--price"><span class="span-class">$</span>99</p>
+                            <p class="plan-card--saving">* Ahorras $129 comparado al plan mensual.</p>
+                            <button class="plan-card--ca">Escoger este <span></span></button>
+                        </div>
+                    </article>
+                </section>
             </section>
     </main>
-    <footer></footer>
+    <footer>
+        <section>
+            <ul class="footer-list">
+                <li><a class="footer-links" href="#">Linkedin</a></li>
+                <li><a class="footer-links" href="#">Crunchbase</a></li>
+                <li><a class="footer-links" href="#">Hackernews</a></li>
+            </ul>
+        </section>
+        <section>
+            <img src="./assets/img/logo-footer.svg" alt="Logo Batatabit">
+        </section>
+    </footer>
     <script src="./js/script.js"></script>
 
 </body>
