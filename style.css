@@ -174,7 +174,7 @@ main {
 
 .exchange-tablesContainer-1 {
   margin-top: 40px;
-  width: 65%;
+  width: 120%;
   align-self: center;
   min-width: 110px;
   max-width: 520px;
@@ -342,7 +342,7 @@ main {
   transform: translateY(-50%);
 
   /* situar la flecha a la derecha de la tabla */
-  right: -20px;
+  right: -30px;
 }
 
 
@@ -362,7 +362,7 @@ main {
   transform: translateY(-50%);
 
   /* situar la flecha a la derecha de la tabla */
-  left: -20px;
+  left: -30px;
 }
 
 
@@ -556,7 +556,7 @@ main {
 a las cards el elemento scroll-snap-align: center;  */
 .plans-container--slider {
   display: flex;
-  height: 316px;
+  height: 370px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
