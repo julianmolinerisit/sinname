@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /*
+   1. Posicionamiento --> static, absolute, relative, fixed
+   2. Modelo de caja (Box model) --> margin, border, padding, content
+   3. Tipografía --> tipos, tamaños de fuente, etc
+   4. Estilos visuales --> box-shadow, border-radius, gradient, etc
+   5. Otros --> reglas CSS y más
+*/
+
+
+        :root {
+
+            /* Colores */
+            --bitcoin-orange: #f7931a;
+            --soft-orange: #ffe9d5;
+            --secondary-blue: #1a9af7;
+            --soft-blue: #e7f5ff;
+            --warm-black: #282623;
+            --black: #201e1c;
+            --grey: #bababa;
+            --off-white: #faf8f7;
+            --just-white: #fff;
+
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        html {
+            font-size: 65.5%;
+            font-family: "DM Sans", sans-serif;
+        }
+
+        header {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            min-width: 320px;
+            height: 100%;
+            text-align: center;
+            background: linear-gradient(207.8deg, var(--just-white) -22%, var(--black) 22%);
+            ;
+        }
+
+        header img {
+            width: 250px;
+            height: 150px;
+            margin-top: 30px;
+            align-self: center;
+        }
+
+        /* Va a mantener el width de 90% entre los 288 y 900px. */
+
+        .header--title-container {
+            width: 90%;
+            min-width: 288px;
+            max-width: 900px;
+            height: 210px;
+            margin-top: 10px;
+            text-align: center;
+            align-self: center;
+        }
+
+        .header--title-container h1 {
+            font-size: 2.4rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: var(--just-white);
+        }
+
+        .header--title-container h1 {
+            font-size: 3rem;
+            width: 100%;
+            font-weight: bold;
+            line-height: 3.5rem;
+            color: var(--just-white);
+        }
+
+        .header--title-container .header--button {
+            position: absolute;
+            left: calc(50% - 118px);
+            top: 270px;
+            display: block;
+            margin-top: 35px;
+            padding: 15px;
+            width: 229px;
+            height: 48px;
+            background-color: var(--off-white);
+            /* Sombra */
+            box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+            border: none;
+            border-radius: 5px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--black);
+
+        }
+
+        .header--button span {
+            display: inline-block;
+            width: 13px;
+            height: 8px;
+            margin-left: 10px;
+            background-image: url('./assets/icons/down-arrow.svg');
+
+        }
+
+        main {
+            width: 100%;
+            height: auto;
+            background-color: var(--off-white);
+        }
+
+        .main-exchange-container {
+            width: 100%;
+            height: auto;
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        .main-exchange-container--title {
+            width: 90%;
+            min-width: 228px;
+            max-width: 900px;
+            margin: 0 auto;
+
+        }
+
+        .main-exchange-container .backgroundImg {
+            width: auto;
+            height: 600px;
+            margin: 0 auto;
+            margin-bottom: 40px;
+            background-image: url('./assets/img/Background_img.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .main-exchange-container h2 {
+            margin-bottom: 30px;
+            font-size: 2.4rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: var(--black);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <main>
+            <section class="main-exchange-container">
+                <div class="backgroundImg"> <img src="./assets/icons/cvio_ico.svg" alt="">
+                    <div class="header--title-container">
+                        <h1>Crea tu cv en línea fácil y rápido.</h1>
+                        <a href="" class="header--button">Cambiar mi futuro<span></span></a>
+                    </div>
+                </div>
+                <div class="main-exchange-container--title">
+                    <h2>Visibilizamos todas las tasas de cambio.</h2>
+                    <p>Traemos información en tiempo real de las casas de cambio y las monedas más importantes del
+                        mundo.
+                    </p>
+                </div>
+        </main>
+    </header>
+
+</body>
+
+</html>
